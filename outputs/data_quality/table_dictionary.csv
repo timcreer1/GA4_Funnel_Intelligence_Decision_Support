@@ -1,0 +1,10 @@
+table_name,grain,purpose,n_rows
+events_base,event,Flattened event-level staging table used to build later tables,4295584
+sessions,user_pseudo_id + ga_session_id,Core pre-purchase session behaviour and segment table,360129
+funnel_steps,session + funnel_step,"First reach timestamp for each funnel milestone, excluding post-purchase repeats",126026
+session_label,session,Binary purchase label used by modelling,360129
+funnel_features,session,Pre-purchase funnel reach flags and step timing features,360129
+items_session,session,Pre-purchase session-level item and product-interest summary,360129
+orders,purchase record,Deduplicated purchase records for audit and reporting,5281
+fact_sessions_weekly,week + segment,"Weekly session, purchase, and engagement fact table",22457
+fact_funnel_weekly,week + segment + funnel_step,Weekly funnel-step reach fact table,27607

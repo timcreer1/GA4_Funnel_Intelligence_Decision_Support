@@ -1,0 +1,9 @@
+{
+  "notebook": "01_events_base_and_gold_tables",
+  "START_DATE": "20201101",
+  "END_DATE": "20210228",
+  "bq_project_id": "ga4-project-490603",
+  "bq_dataset_id": "ga4_capstone",
+  "source_table": "bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*",
+  "capstone_dir": "/content/drive/MyDrive/Capstone_Project"
+}

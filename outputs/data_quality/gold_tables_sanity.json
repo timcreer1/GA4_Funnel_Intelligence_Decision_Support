@@ -1,0 +1,91 @@
+{
+  "date_window": {
+    "START_DATE": "20201101",
+    "END_DATE": "20210228"
+  },
+  "table_counts": [
+    {
+      "table_name": "sessions",
+      "n_rows": 360129
+    },
+    {
+      "table_name": "events_base",
+      "n_rows": 4295584
+    },
+    {
+      "table_name": "fact_sessions_weekly",
+      "n_rows": 22457
+    },
+    {
+      "table_name": "funnel_steps",
+      "n_rows": 126026
+    },
+    {
+      "table_name": "fact_funnel_weekly",
+      "n_rows": 27607
+    },
+    {
+      "table_name": "items_session",
+      "n_rows": 360129
+    },
+    {
+      "table_name": "funnel_features",
+      "n_rows": 360129
+    },
+    {
+      "table_name": "orders",
+      "n_rows": 5281
+    },
+    {
+      "table_name": "session_label",
+      "n_rows": 360129
+    }
+  ],
+  "grain_checks": {
+    "n_sessions": 360129,
+    "n_session_label_rows": 360129,
+    "n_funnel_features_rows": 360129,
+    "n_items_session_rows": 360129,
+    "n_orders": 5281
+  },
+  "funnel_reach_counts": {
+    "sessions_reached_view_item": 76995,
+    "sessions_reached_add_to_cart": 15157,
+    "sessions_reached_begin_checkout": 11106,
+    "sessions_reached_add_shipping_info": 11105,
+    "sessions_reached_add_payment_info": 6815,
+    "sessions_reached_purchase": 4848
+  },
+  "integrity_checks": {
+    "n_duplicate_session_key_groups": 0,
+    "n_extra_session_rows": 0,
+    "n_duplicate_order_key_groups": 0,
+    "n_extra_order_rows": 0
+  },
+  "processed_outputs_kept": [
+    "sessions.parquet",
+    "session_label.parquet",
+    "funnel_features.parquet",
+    "items_session.parquet"
+  ],
+  "powerbi_outputs_kept": [
+    "fact_sessions_weekly.csv",
+    "fact_funnel_weekly.csv"
+  ],
+  "session_label_matches_sessions": true,
+  "funnel_features_matches_sessions": true,
+  "items_session_matches_sessions": true,
+  "sessions_unique_on_user_session_key": true,
+  "orders_unique_on_final_purchase_key": true,
+  "pre_purchase_feature_validation": {
+    "n_session_rows_checked": 360129,
+    "n_session_event_count_mismatches": 0,
+    "n_item_rows_checked": 360129,
+    "n_item_count_mismatches": 0,
+    "n_post_purchase_funnel_steps": 0
+  },
+  "pre_purchase_feature_validation_passed": true,
+  "funnel_monotonic_until_payment": true,
+  "purchase_sessions_can_skip_prior_steps": false,
+  "table_dictionary_file": "/content/drive/MyDrive/Capstone_Project/outputs/data_quality/table_dictionary.csv"
+}

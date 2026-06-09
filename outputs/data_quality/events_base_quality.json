@@ -1,0 +1,10 @@
+{
+  "n_rows": 4295584,
+  "n_users": 270154,
+  "approx_user_session_pairs": 360129,
+  "n_rows_with_session_id": 4295584,
+  "n_rows_with_items": 512346,
+  "n_purchase_rows": 5692,
+  "min_event_date": "20201101",
+  "max_event_date": "20210131"
+}

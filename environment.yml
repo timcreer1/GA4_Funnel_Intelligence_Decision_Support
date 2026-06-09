@@ -1,0 +1,24 @@
+name: ga4-funnel-intelligence
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=2.0.2
+  - scipy=1.16.3
+  - pandas=2.2.2
+  - scikit-learn=1.6.1
+  - matplotlib=3.10.0
+  - seaborn=0.13.2
+  - pillow=11.3.0
+  - pyarrow=18.1.0
+  - joblib=1.5.3
+  - jupyter
+  - notebook
+  - ipykernel
+  - pip:
+      - lightgbm==4.6.0
+      - pandas-gbq==0.30.0
+      - google-cloud-bigquery==3.41.0
+      - db-dtypes

@@ -1,0 +1,28 @@
+{
+  "notebook": "04_reporting_and_decision_summary",
+  "created_utc": "2026-06-07T06:10:22.997714+00:00",
+  "window": {
+    "START_DATE": "20201101",
+    "END_DATE": "20210228"
+  },
+  "latest_reporting_week": "2021-01-25",
+  "weeks_covered": 14,
+  "latest_week_top_issues_count": 3,
+  "final_model_name": "lightgbm_calibrated",
+  "final_model_test_pr_auc": 0.8039195940273273,
+  "combined_intervention_candidates": 200,
+  "intervention_counts": {
+    "Browse drop-off review": 50,
+    "Cart drop-off review": 50,
+    "Late checkout recovery": 100
+  },
+  "weekly_decision_summary_rows": 49,
+  "weekly_decision_summary_rows_by_type": {
+    "top_issue": 41,
+    "model_evidence": 5,
+    "intervention_group": 3
+  },
+  "weekly_decision_summary_created": true,
+  "weekly_memo_created": true,
+  "runtime_seconds": 3.45
+}
